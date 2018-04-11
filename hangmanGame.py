@@ -14,6 +14,14 @@ def isWordGuessed(secretWord, lettersGuessed):
       False otherwise
     '''
     # FILL IN YOUR CODE HERE...
+    flag = False 
+    for i in lettersGuessed:
+        if i in secretWord:
+            flag = True
+        else:
+            flag = False
+        
+    return flag
     
 
 
