@@ -50,6 +50,13 @@ def getAvailableLetters(lettersGuessed):
       yet been guessed.
     '''
     # FILL IN YOUR CODE HERE...
+    str1 = []
+    for i in string.ascii_lowercase:
+        if i not in lettersGuessed:
+            str1.append(i)
+        else:
+            continue
+    return "".join(str1)
     
 
 def hangman(secretWord):
