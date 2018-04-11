@@ -33,6 +33,14 @@ def getGuessedWord(secretWord, lettersGuessed):
       what letters in secretWord have been guessed so far.
     '''
     # FILL IN YOUR CODE HERE...
+    str1 = []
+    for i in secretWord:
+        if i in lettersGuessed:
+            str1.append(i)
+        else:
+            str1.append("_ ")
+    joined = "".join(str1)
+    return joined
     
     
 def getAvailableLetters(lettersGuessed):
